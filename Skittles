@@ -18,13 +18,13 @@ main(void)
  //escolhe um numero pseudoaleatorio entre [0,1023]
 
 	int skittles = rand() % 1024;
-	int palpite;
+	float palpite = 0;
 // Todo
 
 	printf("Olá humano, eu sou uma maquina de doces falante!\nVocê só poderá obter doces se advinhar quantos doces eu possuo no total.\nQual o seu palpite?\nDica: um valor entre 0 e 1023\n");
 
 
-	
+
 
 	while (palpite != skittles)
 {
@@ -38,9 +38,12 @@ main(void)
 	printf("Você escolheu um numero menor. Tente novamente!\n");
 
 	else if (palpite == skittles) 
-	printf("Acertou! Parabens você tem uma maquina inteira de doces para aproveitar!\n");
+	{printf("Acertou! Parabens você tem uma maquina inteira de doces para aproveitar!\n");
+	return 0;
+}
 
 	else 
 	printf ("Use um número válido!\n");
+	
 }
 }
